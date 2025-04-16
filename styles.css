@@ -4,116 +4,106 @@
     box-sizing: border-box;
 }
 
+/*  font-family: "Fraunces", serif;
+    font-family: "Montserrat", sans-serif; */
+
 body{
-    background-color: lightgray;
+    background: #f2ebe3;
 }
 
-.container{
+.general-container{
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     margin-top: 112px;
     height: 456px;
 }
 
-.box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .box img{
     width: 300px;
-    height: 456px; 
+    height: 456px;  
 }
 
 .details{
-    background-color: #fff;
-    height: 456px;
+    padding: 0px 30px 30px 30px;
     width: 300px;
-    padding: 40px 0px 20px 30px;
-
+    height: 456px;
+    background-color: #fff;
 }
 
 .details h4{
-    color: 	#6c7289;
-    letter-spacing: 5px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
+    padding-top: 20px; 
+    opacity: .5;
+    letter-spacing: 4px;
+    font-size: 10px;
+    font-weight: 200;
     line-height: 120%;
 }
 
 .details h1{
-    font-family: "Fraunces", serif;
     padding-top: 24px;
-
+    font-family: "Fraunces", serif;
 }
 
 .details p{
-   color: #6c7289; 
-   padding-top: 24px;
-   line-height: 1.3;
+    padding-top: 24px;
+    color: #6c7289;
+    font-size: 18px;
+    line-height: 1.3;
 }
 
 .price{
     display: flex;
-    align-items: center;
-
-    
+    align-items: center; 
 }
 
 .price h1{
-    color: #3c8067;
+    color:  #3c8067;
     margin-right: 16px;
-    
-   
+
 }
 
 .price h6{
+
     text-decoration: line-through;
     color: #6c7289;
     margin-top: 25px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
-    
+
+}
+#btn-container{
+    background-color: #3c8067;
+    padding-top: 40px;
 }
 
-
 #btn{
-    color: #fff;
-    margin-top: 20px;
     padding-inline: 63px;
-    height: 50px;
-    background-color: #3c8067;
-    border-radius: 10px;
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
+    border-radius: 20px;
+    height: 56px;
     cursor: pointer;
-
+    border: none;
+    transition: all 2sec ease-in;
+    background-color: #3c8067;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    
 }
 
 #btn:hover{
-    background-color: #6c7289;
+    background-color: #1b4133;
 }
 
-.cart-img{
-    margin-right: 8px;
+#btn img{
+  margin-right: 8px;
 }
 
-@media (max-width: 600px) {
-
-     .container {
+@media screen {
+    .general-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         height: auto;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-    
-      .box {
-        height: auto;
-      }
-      
-    } 
-
+    }
+}
